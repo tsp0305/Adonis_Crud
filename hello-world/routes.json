@@ -1,0 +1,69 @@
+/home/priya/project/adonis/hello-world
+{
+  "root": [
+    {
+      "domain": "root",
+      "name": "drive.local.serve",
+      "pattern": "/uploads/*",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "handler": "Closure",
+      "middleware": []
+    },
+    {
+      "domain": "root",
+      "name": "book.index",
+      "pattern": "/book",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "handler": "BooksController.index",
+      "middleware": []
+    },
+    {
+      "domain": "root",
+      "name": "book.store",
+      "pattern": "/book",
+      "methods": [
+        "POST"
+      ],
+      "handler": "BooksController.store",
+      "middleware": []
+    },
+    {
+      "domain": "root",
+      "name": "book.show",
+      "pattern": "/book/:id",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "handler": "BooksController.show",
+      "middleware": []
+    },
+    {
+      "domain": "root",
+      "name": "book.update",
+      "pattern": "/book/:id",
+      "methods": [
+        "PUT",
+        "PATCH"
+      ],
+      "handler": "BooksController.update",
+      "middleware": []
+    },
+    {
+      "domain": "root",
+      "name": "book.destroy",
+      "pattern": "/book/:id",
+      "methods": [
+        "DELETE"
+      ],
+      "handler": "BooksController.destroy",
+      "middleware": []
+    }
+  ]
+}
